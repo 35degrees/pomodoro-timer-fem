@@ -4,9 +4,7 @@
 	function handleClick(i) {
 		soundIndex.update((v) => (v = i));
 
-		let audio = new Audio(
-			`https://github.com/35degrees/pomodoro-timer-fem/blob/main/src/lib/assets/audio/${$soundIndex + 1}.mp3`
-		);
+		let audio = new Audio(`src/lib/assets/audio/${i + 1}.mp3`);
 		audio.play();
 	}
 </script>

@@ -29,9 +29,9 @@
 
 		if (minutes === 0 && seconds === 0) {
 			clearInterval(timer);
-			let audio = new Audio(
-				`https://github.com/35degrees/pomodoro-timer-fem/blob/main/src/lib/assets/audio/${$soundIndex + 1}.mp3`
-			);
+
+			let audio = new Audio(`src/lib/assets/audio/${$soundIndex + 1}.mp3`);
+
 			audio.play();
 			restartTimer();
 		} else if (!isPaused) {
