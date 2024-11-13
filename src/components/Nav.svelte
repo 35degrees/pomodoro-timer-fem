@@ -39,8 +39,8 @@
 					? 'font-main'
 					: $fontIndex === 1
 						? 'font-secondary'
-						: 'font-final'} {$fontIndex === 2 ? 'px-0 text-[0.6rem]' : 'text-sm'} {$fontIndex ===
-					1 && i === 1
+						: 'font-final'} {$fontIndex === 2 ? 'px-0 text-[0.6rem]' : ''} {$fontIndex === 1 &&
+				i === 1
 					? 'px-0 text-[0.78rem]'
 					: 'text-sm'}"
 				class:selectedItem={$navIndex === i}
