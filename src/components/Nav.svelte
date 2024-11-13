@@ -34,12 +34,12 @@
 		{#each lengthOptions as option, i}
 			<p
 				onclick={() => handleClick(i)}
-				class="relative z-10 w-[132px] cursor-pointer select-none rounded-full px-5 py-2 text-center text-sm lowercase text-mediumGrey opacity-70 {$fontIndex ===
+				class="relative z-10 w-[132px] cursor-pointer select-none rounded-full py-2 text-center text-sm lowercase text-mediumGrey opacity-70 {$fontIndex ===
 				0
 					? 'font-main'
 					: $fontIndex === 1
 						? 'font-secondary'
-						: 'font-final'} {$fontIndex === 2 ? 'px-0 text-[0.6rem]' : ''} {$fontIndex === 1 &&
+						: 'font-final'} {$fontIndex === 2 ? 'px-0 text-[0.62rem]' : ''} {$fontIndex === 1 &&
 				i === 1
 					? 'px-0 text-[0.78rem]'
 					: 'text-sm'}"
