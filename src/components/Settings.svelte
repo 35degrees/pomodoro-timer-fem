@@ -109,10 +109,16 @@
 						<input class="rounded-lg" type="number" id="short" min="0" bind:value={$shortMin} />
 						<div class="input-number-actions">
 							<div class="button up" onclick={handleShortUp}>
-								<img src="src/lib/assets/icon-arrow-up.svg" alt="up arrow" />
+								<img
+									src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-arrow-up.svg"
+									alt="up arrow"
+								/>
 							</div>
 							<div class="button down" onclick={handleShortDown}>
-								<img src="src/lib/assets/icon-arrow-down.svg" alt="down arrow" />
+								<img
+									src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-arrow-down.svg"
+									alt="down arrow"
+								/>
 							</div>
 						</div>
 					</div>
@@ -123,10 +129,16 @@
 						<input class="rounded-lg" type="number" id="long" min="0" bind:value={$longMin} />
 						<div class="input-number-actions">
 							<div class="button up" onclick={handleLongUp}>
-								<img src="src/lib/assets/icon-arrow-up.svg" alt="up arrow" />
+								<img
+									src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-arrow-up.svg"
+									alt="up arrow"
+								/>
 							</div>
 							<div class="button down" onclick={handleLongDown}>
-								<img src="src/lib/assets/icon-arrow-down.svg" alt="down arrow" />
+								<img
+									src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-arrow-down.svg"
+									alt="down arrow"
+								/>
 							</div>
 						</div>
 					</div>
