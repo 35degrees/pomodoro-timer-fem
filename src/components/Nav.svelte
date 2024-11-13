@@ -39,7 +39,7 @@
 					? 'font-main'
 					: $fontIndex === 1
 						? 'font-secondary'
-						: 'font-final'} {$fontIndex === 2 ? 'px-2 text-[0.7rem]' : 'text-sm'} {$fontIndex ===
+						: 'font-final'} {$fontIndex === 2 ? 'px-2 text-[0.65rem]' : 'text-sm'} {$fontIndex ===
 					1 && i === 1
 					? 'px-2 text-[0.78rem]'
 					: 'text-sm'}"
