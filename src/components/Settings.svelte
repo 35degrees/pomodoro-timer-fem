@@ -89,10 +89,16 @@
 						/>
 						<div class="input-number-actions">
 							<div class="button up" onclick={handlePomodoroUp}>
-								<img src="src/lib/assets/icon-arrow-up.svg" alt="up arrow" />
+								<img
+									src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-arrow-up.svg"
+									alt="up arrow"
+								/>
 							</div>
 							<div class="button down" onclick={handlePomodoroDown}>
-								<img src="src/lib/assets/icon-arrow-down.svg" alt="down arrow" />
+								<img
+									src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-arrow-down.svg"
+									alt="down arrow"
+								/>
 							</div>
 						</div>
 					</div>

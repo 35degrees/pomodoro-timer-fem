@@ -24,7 +24,11 @@
 		class=" mx-auto mt-8 cursor-pointer {$startState ? 'pointer-events-none' : ''} select-none"
 		onclick={() => (settings = !settings)}
 	>
-		<img class="cog" src="src/lib/assets/icon-settings.svg" alt="" />
+		<img
+			class="cog"
+			src="https://raw.githubusercontent.com/35degrees/pomodoro-timer-fem/038130795744473a8656c6a06bf6ee3d9f8a70c5/src/lib/assets/icon-settings.svg"
+			alt=""
+		/>
 	</div>
 	{#if settings}
 		<Settings {settings} {closeSettings} {applySettings} />
