@@ -1,10 +1,18 @@
 <script>
 	import { soundIndex } from '../routes/stores.js';
 	let soundOptions = ['seatbelt', 'chime', 'tritone'];
+
+	let audio;
 	function handleClick(i) {
 		soundIndex.update((v) => (v = i));
 
-		let audio = new Audio(`src/lib/assets/audio/${i + 1}.mp3`);
+		if ($soundIndex === 0) {
+			audio = new Audio('https://audio.jukehost.co.uk/4a9WbaYRffpuwhy25xafUkbaG8unW6oe');
+		} else if ($soundIndex === 1) {
+			audio = new Audio('https://audio.jukehost.co.uk/aJx4MU76qpCjIjRCTYzFHBCrXPHQbNDL');
+		} else if ($soundIndex === 2) {
+			audio = new Audio('https://audio.jukehost.co.uk/WT7CFfDn341rqtjWVNqXjbw5PZZ09Rg6');
+		}
 		audio.play();
 	}
 </script>

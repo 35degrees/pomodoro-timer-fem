@@ -15,6 +15,7 @@
 	let timerText = $state();
 	let updatedTimer = $state(0);
 	let isPaused = $state(false);
+	let audio;
 
 	console.log({ pomodoroMin });
 
@@ -30,7 +31,13 @@
 		if (minutes === 0 && seconds === 0) {
 			clearInterval(timer);
 
-			let audio = new Audio(`src/lib/assets/audio/${$soundIndex + 1}.mp3`);
+			if ($soundIndex === 0) {
+				audio = new Audio('https://audio.jukehost.co.uk/4a9WbaYRffpuwhy25xafUkbaG8unW6oe');
+			} else if ($soundIndex === 1) {
+				audio = new Audio('https://audio.jukehost.co.uk/aJx4MU76qpCjIjRCTYzFHBCrXPHQbNDL');
+			} else if ($soundIndex === 2) {
+				audio = new Audio('https://audio.jukehost.co.uk/WT7CFfDn341rqtjWVNqXjbw5PZZ09Rg6');
+			}
 
 			audio.play();
 			restartTimer();
