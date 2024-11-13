@@ -8,7 +8,7 @@
 	const lengthOptions = ['pomodoro', 'short break', 'long break'];
 
 	let myMainIndex = new MainIndex();
-	let slideLeft = $derived($navIndex * 125);
+	let slideLeft = $derived($navIndex * 128);
 
 	$inspect(myMainIndex.value);
 
@@ -34,14 +34,14 @@
 		{#each lengthOptions as option, i}
 			<p
 				onclick={() => handleClick(i)}
-				class="relative z-10 w-[125px] cursor-pointer select-none rounded-full px-5 py-2 text-center text-sm lowercase text-mediumGrey opacity-70 {$fontIndex ===
+				class="relative z-10 w-[128px] cursor-pointer select-none rounded-full px-5 py-2 text-center text-sm lowercase text-mediumGrey opacity-70 {$fontIndex ===
 				0
 					? 'font-main'
 					: $fontIndex === 1
 						? 'font-secondary'
-						: 'font-final'} {$fontIndex === 2 ? 'px-2 text-[0.65rem]' : 'text-sm'} {$fontIndex ===
+						: 'font-final'} {$fontIndex === 2 ? 'px-0 text-[0.64rem]' : 'text-sm'} {$fontIndex ===
 					1 && i === 1
-					? 'px-2 text-[0.78rem]'
+					? 'px-0 text-[0.78rem]'
 					: 'text-sm'}"
 				class:selectedItem={$navIndex === i}
 			>
