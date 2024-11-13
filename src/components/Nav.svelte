@@ -34,7 +34,7 @@
 		{#each lengthOptions as option, i}
 			<p
 				onclick={() => handleClick(i)}
-				class="relative z-10 w-[132px] cursor-pointer select-none rounded-full py-2 text-center text-sm lowercase text-mediumGrey opacity-70 {$fontIndex ===
+				class="relative z-10 w-[132px] cursor-pointer select-none rounded-full py-2 text-center text-sm lowercase text-mediumGrey opacity-70 hover:text-lightGrey {$fontIndex ===
 				0
 					? 'font-main'
 					: $fontIndex === 1
