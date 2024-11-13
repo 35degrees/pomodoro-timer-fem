@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import { pomodoroMin, shortMin, longMin } from '../routes/stores.js';
+	import { pomodoroMin, shortMin, longMin, colorIndex } from '../routes/stores.js';
 	import Sound from './Sound.svelte';
 	import Color from './Color.svelte';
 	import Font from './Font.svelte';
@@ -164,7 +164,11 @@
 		<Sound />
 
 		<div
-			class=" absolute -bottom-5 cursor-pointer rounded-full bg-tomatoRed text-center text-sm uppercase tracking-wider text-white shadow-lg"
+			class=" absolute -bottom-5 cursor-pointer rounded-full text-darkBlue {$colorIndex === 0
+				? 'bg-tomatoRed'
+				: $colorIndex === 1
+					? 'bg-aquaBlue'
+					: 'bg-violet'} text-center text-sm uppercase tracking-wider text-white shadow-lg"
 		>
 			{@render applySettings()}
 		</div>
